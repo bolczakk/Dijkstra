@@ -253,9 +253,4 @@ Engine::~Engine() {
     for (const auto& line : lines) {
         delete line;
     }
-    for (const auto& node : end_path) {
-        delete node;
-    }
-    delete PTR1;
-    delete PTR2;
 }
