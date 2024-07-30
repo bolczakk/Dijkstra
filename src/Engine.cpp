@@ -111,7 +111,7 @@ std::vector<Node*> Engine::dijkstra() {
     pq.emplace(0.0f, PTR1);
 
     while (!pq.empty()) {
-        auto &currentPair = pq.top();
+        auto currentPair = pq.top();
         pq.pop();
 
         float currentDistance = currentPair.first;
